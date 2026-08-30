@@ -83,7 +83,7 @@ for name in ["random_walk", "arima", "regression"]:
     m = results[name]["metrics"]
     print(f"{name:12s}  RMSE={m['rmse']:.4f}  MAE={m['mae']:.4f}")
 
-plt.figure(figsize=(10, 5))
+plt.figure(figsize=(10, 6))
 plt.plot(results["test_dates"], results["actual"], color="black", linewidth=2, label="Actual")
 plt.plot(results["test_dates"], results["random_walk"]["pred"], "--", alpha=0.7, label="Random walk")
 plt.plot(results["test_dates"], results["arima"]["pred"], "--", alpha=0.7, label="ARIMA(1,1,1)")
