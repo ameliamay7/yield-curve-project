@@ -1,6 +1,6 @@
 # US Treasury Yield Curve Modeling
 
-Fetches live Treasury yield data across 8 maturities from the FRED API, fits a Nelson-Siegel model to estimate the curve's level, slope, and curvature over time, and benchmarks three forecasting approaches for the 10-year yield against a naive baseline (random walk). Created as a side practice project in modeling as a reaction to what I've been reading in the WSJ the past few weeks, under even more uncertainty in the coming. As a snapshot, this week the 10-year yield on UST hit an 18-year high (which is why I've chosen the 10-year to model more closely). 
+Fetches live Treasury yield data across 8 maturities from the FRED API, fits a Nelson-Siegel model to estimate the curve's level, slope, and curvature over time, and benchmarks three forecasting approaches for the 10-year yield against a naive baseline (random walk). Created as a side practice project in modeling as a reaction to what I've been reading in the WSJ the past few weeks, under even more uncertainty in the coming. As a snapshot, this week (8/15/26) the 10-year yield on UST hit an 18-year high (which is why I've chosen the 10-year to model more closely). 
 
 ## What it does
 
