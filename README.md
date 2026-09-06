@@ -17,7 +17,7 @@ Raw yield data across 8 maturities doesn't tell you much on its own, so Nelson-S
 
 ## Why two fitting strategies
 
-Independent daily fits are the baseline, but yield curves move gradually day to day, so re-fitting from scratch each time can introduce noise from the optimizer landing in slightly different places. Instead, we're starting each day from the previous day's parameters to test whether that noise is real, measured directly as the standard deviation of β1 across the full history captured under each strategy.
+Independent daily fits are the baseline, but yield curves move gradually day to day, so re-fitting from scratch each time can introduce noise from the optimizer landing in slightly different places. Instead, the model starts each day from the previous day's parameters to test whether that noise is real, measured directly as the standard deviation of β1 across the full history captured under each strategy.
 
 ## Why benchmark against a random walk
 
